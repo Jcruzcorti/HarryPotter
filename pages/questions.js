@@ -1,10 +1,13 @@
+import React from 'react'
+import PageLayOut from '../components/layout/PageLayOut';
+import styles from '../styles/Home.module.css';
 import Image from 'next/image'
-import Link from 'next/link'
-import PageLayOut from '../components/layout/PageLayOut'
-import styles from '../styles/Home.module.css'
+
+import Link from 'next/link';
+
+function questions() {
 
 
-export default function Home() {
   return (
 
     <PageLayOut title='Harry Potter Quiz'>
@@ -12,7 +15,8 @@ export default function Home() {
 
         <main className={styles.main}>
           <h1>HARRY POTTER</h1>
-         <Link href={'/questions'}><h3>EMPEZAR QUIZ</h3></Link> 
+          <h3>ACA VAN LAS PREGUNTAS</h3>
+          <Link href={'/'}>VOLVER AL INICIO</Link>
         </main>
 
         <footer className={styles.footer}>
@@ -28,6 +32,11 @@ export default function Home() {
           </a>
         </footer>     
       </div>
-    </PageLayOut>
+    </PageLayOut>   
+    
   )
 }
+
+export default questions;
+
+
