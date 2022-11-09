@@ -105,6 +105,16 @@
   align-items: center;
   
 }
+.main2 {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  
+}
 
 
 
@@ -124,7 +134,37 @@
   flex-grow: 1;
 }
 
-.title a {
+.h1{
+  font-family: 'Crimson Text', serif; 
+  font-size: 50px;
+}
+.h3{
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+  
+}
+.h3:hover{
+  font-family: 'Crimson Text', serif;
+  font-weight: bold;
+  filter: drop-shadow(3px 3px 12px #262626)
+}
+
+
+.pQuestions{
+  font-family: 'Cardo', serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pFooter{
+  font-family: 'Crimson Text', serif;
+  font-size: 22px;
+}
+.pFooter:hover{
+  font-family: 'Crimson Text', serif;
+  filter: drop-shadow(3px 3px 24px #262626)
+}
+/* .title a {
   color: #0070f3;
   text-decoration: none;
 }
@@ -202,7 +242,7 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
-}
+} */
 
 @media (max-width: 600px) {
   .grid {
