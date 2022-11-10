@@ -13,14 +13,14 @@ function questions({data}) {
 
     <PageLayOut title='Harry Potter Quiz'>
       <div className={styles.container}>
-
+    
         <main className={styles.main2}>
           <h1 className={styles.h1}>HARRY POTTER</h1>
           <div>
             <p className={styles.pQuestions}>PREGUNTAS</p>
             <div>
               <QuestionsList data={data}/>
-            </div>           
+            </div>        
           </div>
           
           <Link href={'/'}>VOLVER AL INICIO</Link>
