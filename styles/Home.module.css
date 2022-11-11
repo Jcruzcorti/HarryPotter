@@ -95,6 +95,32 @@
   
 }
 
+.container2{
+  padding: 0 2rem;
+  background: 
+    linear-gradient(
+      331deg,
+      hsl(47.06, 100%, 50%) 0%,
+      hsl(47.06, 100%, 49.71%) 3%,
+      hsl(47.06, 100%, 48.84%) 5.9%,
+      hsl(47.06, 100%, 47.44%) 9%,
+      hsl(47.06, 100%, 45.53%) 12.3%,
+      hsl(47.06, 100%, 43.15%) 15.9%,
+      hsl(47.06, 100%, 40.32%) 20.1%,
+      hsl(47.06, 100%, 37.08%) 24.8%,
+      hsl(47.06, 100%, 33.45%) 30.4%,
+      hsl(47.06, 100%, 29.48%) 36.7%,
+      hsl(47.06, 100%, 25.19%) 44.1%,
+      hsl(47.06, 100%, 20.6%) 52.5%,
+      hsl(47.06, 100%, 15.76%) 62.2%,
+      hsl(47.06, 100%, 10.69%) 73.3%,
+      hsl(47.06, 100%, 5.43%) 85.8%,
+      hsl(0, 0%, 0%) 100%
+    );
+
+
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -131,7 +157,36 @@
     height: auto;
   }
 } */
+.divButton{
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 20px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+}
 
+.buttonTheme{
+  border-radius: 4px;
+  border: none;
+  filter: drop-shadow(3px 3px 7px #232323);
+  background-color:rgb(195, 155, 12);
+  color: #080808 ;
+  font-family: 'Cardo', serif;
+  font-size: 20px;  
+}
+
+.buttonTheme2{
+  border-radius: 5px;
+  border: none;
+  filter: drop-shadow(3px 3px 7px #232323);
+  /* background-color:rgb(207, 165, 15); */
+  background-color:rgb(196, 156, 13);
+  color: #080808 ;
+  font-family: 'Cardo', serif;
+  font-size: 20px;
+}
 
 .footer {
   display: flex;
@@ -152,6 +207,7 @@
 .h1{
   font-family: 'Crimson Text', serif; 
   font-size: 50px;
+  color: #141414;
   filter: drop-shadow(2px 2px 2px #262626);
 
 }

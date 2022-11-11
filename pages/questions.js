@@ -1,19 +1,38 @@
-import React from 'react'
+import React,{useState} from 'react'
 import PageLayOut from '../components/layout/PageLayOut';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image'
 
 import Link from 'next/link';
 import QuestionsList from '../components/questionslist/QuestionsList';
+import { Button } from '@nextui-org/react';
 
 function questions({data}) {
 
+  const [themestate, setThemestate] = useState(true)
+
+  function changeTheme() {
+    if (themestate) {
+      setThemestate(false)
+      
+    }
+
+    else{
+      setThemestate(true)
+    }
+  }
+
 
   return (
-
+  
     <PageLayOut title='Harry Potter Quiz'>
-      <div className={styles.container}>
-    
+      <div className={themestate ? styles.container :styles.container2} >
+        <div className={styles.divButton}>
+          <button onClick={(e)=>changeTheme(e)} 
+            className={themestate ? styles.buttonTheme :styles.buttonTheme2}>
+              000
+          </button>
+        </div>
         <main className={styles.main2}>
           <h1 className={styles.h1}>HARRY POTTER</h1>
           <div>
