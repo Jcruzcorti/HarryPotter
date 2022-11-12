@@ -10,7 +10,7 @@ function questions({data}) {
 
   const [themestate, setThemestate] = useState(true)
 
-  const {a} = useContext(Context)
+  // const {a} = useContext(Context)
 
   function changeTheme() {
     if (themestate) {
@@ -36,15 +36,13 @@ function questions({data}) {
         </div>
         <main className={styles.main2}>
           <h1 className={styles.h1}>HARRY POTTER</h1>
-          <button onClick={a}>apreta</button>
+          <Link href={'/'}>VOLVER AL INICIO</Link>
           <div>
             <p className={styles.pQuestions}>PREGUNTAS</p>
             <div>
               <QuestionsList data={data}/>
             </div>        
           </div>
-          
-          <Link href={'/'}>VOLVER AL INICIO</Link>
         </main>
 
         <footer className={styles.footer}>
