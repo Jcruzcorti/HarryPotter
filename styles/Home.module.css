@@ -198,7 +198,7 @@
 }
 
 .lightDarkMode{
-  width: 45px;
+  width: 40px;
   height: auto;
   padding: 0;
 }
@@ -226,9 +226,16 @@
   filter: drop-shadow(2px 2px 2px #262626);
 
 }
+.h2{
+  font-family: 'Crimson Text', serif; 
+  font-size: 30px;
+  color: #141414;
+  filter: drop-shadow(0.5px 0.5px 1px #262626);
+
+}
 .h3{
   font-family: 'Crimson Text', serif;
-  font-size: 30px;
+  font-size: 25px;
   
 }
 .h3:hover{

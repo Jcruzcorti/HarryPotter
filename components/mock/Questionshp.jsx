@@ -40,7 +40,7 @@ export const Questionshp = [
 
     {
         ids: 4,
-        question: '¿Este es el personaje asesinado en la Batalla de Howarts?', 
+        question: '¿Este es el personaje asesinado en la Batalla de Hogwarts?', 
             options: [
                 {option: "Si, es él", isCorrect: true},
                 {option: "No, es su gemelo George", isCorrect: false},    
@@ -97,10 +97,23 @@ export const Questionshp = [
 
 
     },
-
+    
     {
         ids: 9,
-        question: '¿A qué reconocido mortifago/a asesinó en la Battalla de Howarts?', 
+        question: '¿Qué personaje se encarga de plantarle el diario de Tom Riddle a Ginny?', 
+            options: [
+                {option: "Vincent Crabbe", isCorrect: false},
+                {option: "Draco Malfoy", isCorrect: false},
+                {option: "Lucius Malfoy", isCorrect: true},
+                {option: "Gregory Goyle", isCorrect: false},
+            ] 
+
+
+    },
+
+    {
+        ids: 10,
+        question: '¿A qué reconocido mortifago/a asesinó en la Battalla de Hogwarts?', 
             options: [
                 {option: "Bellatrix Lestrange", isCorrect: true},
                 {option: "Peter Pettigrew", isCorrect: false},
@@ -110,7 +123,7 @@ export const Questionshp = [
     },
 
     {
-        ids: 10,
+        ids: 11,
         question: '¿Por qué objeto del mundo Muggle se intriga el Sr Weasley al conocer a Harry?', 
             options: [
                 {option: "Jabón Liquido", isCorrect: false},
@@ -124,166 +137,149 @@ export const Questionshp = [
 
 
     {
-        ids: 11,
-        question: '¿Qué combinación de jugadores son todos patrocinados por Nike?', 
-            options: [
-                {option: "Leandro Paredes - Alejandro Gómez - Nicolás Tagliafico", isCorrect: false},
-                {option: "Lautaro Martinez - Nicolas Otamendi - Rodrigo De Paul", isCorrect: false},
-                {option: "Lisandro Martinez - Nicolás Otamendi - Nicolás Tagliafico", isCorrect: true},
-                {option: "Julián Álvarez - Rodrigo De Paul - Alejandro Gómez", isCorrect: false},
-            ]   
-
-
-
-    },
-
-    {
         ids: 12,
-        question: '¿Cuál de los siguientes jugadores no convirtió gol en la era Scaloni?', 
+        question: '¿Cuál de los siguientes Horrocrux es destruído por Neville?', 
             options: [
-                {option: "Nicolás Otamendi", isCorrect: true},
-                {option: "Germán Pezzella", isCorrect: false},
-                {option: "Guido Rodríguez", isCorrect: false},
-                {option: "Cristian Romero", isCorrect: false},
+                {option: "Guardapelo de Salazar Slytherin", isCorrect: false},
+                {option: "Diadema de Rowena Ravenclaw", isCorrect: false},
+                {option: "Serpiente Nagini", isCorrect: true},
+                {option: "Copa de Helga Hufflepuff", isCorrect: false},
             ]   
+
 
 
     },
 
     {
         ids: 13,
-        question: '¿Qué jugador no nació en Buenos Aires?', 
+        question: '¿En cuál de las siguientes casas de Hogwarts pertenece Luna?', 
             options: [
-                {option: "Nicolás González", isCorrect: false},
-                {option: "Rodrigo De Paul", isCorrect: false},
-                {option: "Thiago Almada", isCorrect: false},
-                {option: "Lisandro Martinez", isCorrect: true},
-            ]  
+                {option: "Ravenclaw", isCorrect: true},
+                {option: "Gryffindor", isCorrect: false},
+                {option: "Slytherin", isCorrect: false},
+                {option: "Hufflepuff", isCorrect: false},
+            ]   
+
 
     },
 
     {
         ids: 14,
-        question: '¿Cuál de los siguientes jugadores tiene como pie hábil la zurda?', 
+        question: '¿Cuál era la tarea fundamental que se le asignó a Draco en "El misterio del príncipe"?', 
             options: [
-                {option: "Nehuen Pérez", isCorrect: false},
-                {option: "Nicolás Dominguez", isCorrect: false},
-                {option: "Marcos Senesi", isCorrect: true},
-                {option: "Thiago Almada", isCorrect: false},
-            ] 
-
+                {option: "Sacrificar su vida para fortalecer a Voldemort", isCorrect: false},
+                {option: "Encontrar los Horrocrux y entregarlos a Voldemort", isCorrect: false},
+                {option: "Secuestrar a Harry Potter y entregarlo a Voldemort", isCorrect: false},
+                {option: "Asesinar a Albus Dumbledore cuando el momento llegara", isCorrect: true},
+            ]  
 
     },
 
+
     {
         ids: 15,
-        question: '¿Quiénes convirtieron en la finalissima vs Italia en Wembley?', 
+        question: '¿A raíz del uso de qué Horrocrux Albus comienza a estar destinado a morir?', 
         options: [
-            {option: "Lionel Messi - Julián Álvarez - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Ángel Di María - Paulo Dybala", isCorrect: true},
-            {option: "Lionel Messi - Ángel Di María - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Lionel Messi - Paulo Dybala", isCorrect: false},
+            {option: "La Diadema de Rowena Ravenclaw", isCorrect: false},
+            {option: "El Anillo de Sorvolo Gaunt", isCorrect: true},
+            {option: "El Diario de Tom Riddle", isCorrect: false},
+            {option: "El Guardapelo de Salazar Slytherin.", isCorrect: false},
         ] 
 
 
     },
     {
         ids: 16,
-        question: '¿Quiénes convirtieron en la finalissima vs Italia en Wembley?', 
+        question: '¿Qué objeto se encarga de regarle a Harry Potter en su primer año en Hogwarts?', 
         options: [
-            {option: "Lionel Messi - Julián Álvarez - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Ángel Di María - Paulo Dybala", isCorrect: true},
-            {option: "Lionel Messi - Ángel Di María - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Lionel Messi - Paulo Dybala", isCorrect: false},
+            {option: "Varita mágica de acebo", isCorrect: false},
+            {option: "Escoba Saeta de Fuego", isCorrect: false},
+            {option: "Varita mágica de Saúco", isCorrect: false},
+            {option: "Escoba Nimbus 2000", isCorrect: true},
         ] 
 
 
     },
     {
         ids: 17,
-        question: '¿Quiénes convirtieron en la finalissima vs Italia en Wembley?', 
+        question: '¿Cuál era el Boggart (personificación del mayor miedo) de Remus?', 
         options: [
-            {option: "Lionel Messi - Julián Álvarez - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Ángel Di María - Paulo Dybala", isCorrect: true},
-            {option: "Lionel Messi - Ángel Di María - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Lionel Messi - Paulo Dybala", isCorrect: false},
+            {option: "Severus Snape", isCorrect: false},
+            {option: "Luna llena", isCorrect: true},
+            {option: "Lord Voldemort", isCorrect: false},
+            {option: "Serpiente Nagiri", isCorrect: false},
         ] 
 
 
     },
     {
         ids: 18,
-        img: 'Acá va la url de la imagen o la ruta de la misma',
-        question: '¿Quiénes convirtieron en la finalissima vs Italia en Wembley?', 
+        question: '¿Cuál era el nombre del perro de Hagrid?', 
         options: [
-            {option: "Lionel Messi - Julián Álvarez - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Ángel Di María - Paulo Dybala", isCorrect: true},
-            {option: "Lionel Messi - Ángel Di María - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Lionel Messi - Paulo Dybala", isCorrect: false},
+            {option: "Fang", isCorrect: true},
+            {option: "Hedwig", isCorrect: false},
+            {option: "Aragog", isCorrect: false},
+            {option: "Buckbeak", isCorrect: false},
         ] 
 
 
     },
     {
         ids: 19,
-        img: 'Acá va la url de la imagen o la ruta de la misma',
-        question: '¿Quiénes convirtieron en la finalissima vs Italia en Wembley?', 
+        question: '¿Quién se encargó de asesinar al padrino de Harry Potter?', 
         options: [
-            {option: "Lionel Messi - Julián Álvarez - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Ángel Di María - Paulo Dybala", isCorrect: true},
-            {option: "Lionel Messi - Ángel Di María - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Lionel Messi - Paulo Dybala", isCorrect: false},
+            {option: "Lord Voldemort", isCorrect: false},
+            {option: "Peter Pettigrew", isCorrect: false},
+            {option: "Lucius Malfoy", isCorrect: false},
+            {option: "Bellatrix Lestrange", isCorrect: true},
         ] 
 
 
     },
     {
         ids: 20,
-        img: 'Acá va la url de la imagen o la ruta de la misma',
-        question: '¿Quiénes convirtieron en la finalissima vs Italia en Wembley?', 
+        question: '¿Cuál es la asignatura que siempre apasionó a Severus enseñar?', 
         options: [
-            {option: "Lionel Messi - Julián Álvarez - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Ángel Di María - Paulo Dybala", isCorrect: true},
-            {option: "Lionel Messi - Ángel Di María - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Lionel Messi - Paulo Dybala", isCorrect: false},
+            {option: "Encantamientos", isCorrect: false},
+            {option: "Defensa contra las artes oscuras", isCorrect: true},
+            {option: "Posiones", isCorrect: false},
+            {option: "Cuidado de Criaturas Mágicas", isCorrect: false},
         ] 
 
 
     },
     {
         ids: 21,
-        img: 'Acá va la url de la imagen o la ruta de la misma',
-        question: '¿Quiénes convirtieron en la finalissima vs Italia en Wembley?', 
+        question: '¿Qué reconocida frase utilizó Bellatrix luego de asesinar a Sirius Black?', 
         options: [
-            {option: "Lionel Messi - Julián Álvarez - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Ángel Di María - Paulo Dybala", isCorrect: true},
-            {option: "Lionel Messi - Ángel Di María - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Lionel Messi - Paulo Dybala", isCorrect: false},
+            {option: "Yo asesiné a Sirius Black, yo asesiné a Sirius Black", isCorrect: false},
+            {option: "Sirius Black no vive más, Sirius Black no vive más", isCorrect: false},
+            {option: "Yo maté a Sirius Black, yo maté a Sirius Black", isCorrect: true},
+            {option: "Sirius Black no existe más, Sirius Black no existe más", isCorrect: false},
         ] 
 
 
     },
     {
         ids: 22,
-        img: 'Acá va la url de la imagen o la ruta de la misma',
-        question: '¿Quiénes convirtieron en la finalissima vs Italia en Wembley?', 
+        question: '¿En cuántas partes diferentes divide su alma Voldemort (horrocruxes)?', 
         options: [
-            {option: "Lionel Messi - Julián Álvarez - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Ángel Di María - Paulo Dybala", isCorrect: true},
-            {option: "Lionel Messi - Ángel Di María - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Lionel Messi - Paulo Dybala", isCorrect: false},
+            {option: "6 partes", isCorrect: false},
+            {option: "7 partes", isCorrect: true},
+            {option: "8 partes", isCorrect: false},
+            {option: "9 partes", isCorrect: false},
         ] 
 
 
     },
     {
         ids: 23,
-        question: '¿Quiénes convirtieron en la finalissima vs Italia en Wembley?', 
+        question: '¿Cómo se llamaba la gata del personaje?', 
         options: [
-            {option: "Lionel Messi - Julián Álvarez - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Ángel Di María - Paulo Dybala", isCorrect: true},
-            {option: "Lionel Messi - Ángel Di María - Paulo Dybala", isCorrect: false},
-            {option: "Lautaro Martinez - Lionel Messi - Paulo Dybala", isCorrect: false},
+            {option: "Fang", isCorrect: false},
+            {option: "Fluffy", isCorrect: false},
+            {option: "Aragog", isCorrect: false},
+            {option: "Norris", isCorrect: true},
         ] 
 
 
