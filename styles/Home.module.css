@@ -168,24 +168,39 @@
 }
 
 .buttonTheme{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   border: none;
   filter: drop-shadow(3px 3px 7px #232323);
   background-color:rgb(195, 155, 12);
   color: #080808 ;
-  font-family: 'Cardo', serif;
-  font-size: 20px;  
+  /* font-family: 'Cardo', serif; */
+  /* font-size: 20px;   */
+  
 }
 
 .buttonTheme2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
   border: none;
   filter: drop-shadow(3px 3px 7px #232323);
   /* background-color:rgb(207, 165, 15); */
   background-color:rgb(196, 156, 13);
   color: #080808 ;
-  font-family: 'Cardo', serif;
-  font-size: 20px;
+  /* font-family: 'Cardo', serif; */
+  /* font-size: 20px; */
+}
+
+.lightDarkMode{
+  width: 45px;
+  height: auto;
+  padding: 0;
 }
 
 .footer {

@@ -27,7 +27,7 @@ export default function Home() {
         <div className={styles.divButton}>
           <button onClick={(e)=>changeTheme(e)} 
             className={themestate ? styles.buttonTheme :styles.buttonTheme2}>
-              000
+              <Image src="/mode.png"alt="Light and dark mode" width={40} height={30} className={styles.lightDarkMode}/>
           </button>
           
         </div>
