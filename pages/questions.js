@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+import React,{useState,useContext} from 'react'
+import { Context } from '../components/context/Context';
 import PageLayOut from '../components/layout/PageLayOut';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image'
@@ -8,6 +9,8 @@ import QuestionsList from '../components/questionslist/QuestionsList';
 function questions({data}) {
 
   const [themestate, setThemestate] = useState(true)
+
+  const {a} = useContext(Context)
 
   function changeTheme() {
     if (themestate) {
@@ -33,6 +36,7 @@ function questions({data}) {
         </div>
         <main className={styles.main2}>
           <h1 className={styles.h1}>HARRY POTTER</h1>
+          <button onClick={a}>apreta</button>
           <div>
             <p className={styles.pQuestions}>PREGUNTAS</p>
             <div>

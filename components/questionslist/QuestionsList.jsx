@@ -1,17 +1,19 @@
 import Image from 'next/image'
-import React from 'react'
+import React, {useContext} from 'react'
 import styles from '../../styles/Home.module.css';
+
 
 
 
 export default function QuestionsList({data}) {
 
+//  const {a} = useContext(Context)
+
+
   return (
 
-
        <div>
-            {data.map((item)=>(
-            
+            {data.map((item)=>(           
             <div key={item.id}>
               {
                 item.id===0
@@ -23,17 +25,9 @@ export default function QuestionsList({data}) {
                 </>
           
               }
-
-              {/* <h2 className={styles.h3}>{item.personaje}</h2>
-              <Image alt={'asdas'} src={item.imagen} width={180} height={200} className={styles.imgs}/>  */}
             </div>
-
-          ))}  
-            
-         </div>
-
-
-    
+          ))}             
+         </div>  
   )
 }
 
