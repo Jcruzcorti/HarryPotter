@@ -2,6 +2,7 @@ export const Questionshp = [
 
     {
         ids: 1,
+        name: 'Harry',
         question: '¿Cuál es el nombre del actor que caracteriza el personaje?',
         options: [
             {option: "Tom Felton", isCorrect: false},
@@ -14,7 +15,8 @@ export const Questionshp = [
 
     {
         ids: 2,
-        question: '¿Cuál es el famoso hechizo que Hermione le corrigue a Ron en la "Piedra Filosofal"?',
+        name: 'Hermione',
+        question: '¿Cuál es el famoso hechizo que Hermione le corrigue a Ron en "La Piedra Filosofal"?',
         options: [
                 {option: "Expecto Patronum", isCorrect: false},
                 {option: "Expelliarmus", isCorrect: false},
@@ -27,6 +29,7 @@ export const Questionshp = [
 
     {
         ids: 3,
+        name: 'Ron',
         question: '¿Cuántos hermanos tiene el personaje?',
         options: [
             {option: "4 hermanos", isCorrect: false},
@@ -40,6 +43,7 @@ export const Questionshp = [
 
     {
         ids: 4,
+        name: 'Fred',
         question: '¿Este es el personaje asesinado en la Batalla de Hogwarts?', 
             options: [
                 {option: "Si, es él", isCorrect: true},
@@ -51,6 +55,7 @@ export const Questionshp = [
 
     {
         ids: 5,
+        name: 'George',
         question: '¿O quizás es éste el personaje asesinado?', 
             options: [
                 {option: "Si, es George", isCorrect: false},
@@ -62,6 +67,7 @@ export const Questionshp = [
 
     {
         ids: 6,
+        name: 'Bill',
         question: '¿Cuál es el nombre de la esposa de Bill?', 
             options: [
                 {option: "Fleur Delacour", isCorrect: true},
@@ -74,6 +80,7 @@ export const Questionshp = [
 
     {
         ids: 7,
+        name: 'Percy',
         question: '¿En qué pelicula realiza su primer aparición Pearcy como prefecto?', 
             options: [
                 {option: "La cámara secreta", isCorrect: false},
@@ -87,6 +94,7 @@ export const Questionshp = [
 
     {
         ids: 8,
+        name: 'Charlie',
         question: '¿En qué película ayudó a proveer dragones para el Torneo de los Tres Magos?', 
             options: [
                 {option: "La orden del Fénix", isCorrect: false},
@@ -100,6 +108,7 @@ export const Questionshp = [
     
     {
         ids: 9,
+        name: 'Ginny',
         question: '¿Qué personaje se encarga de plantarle el diario de Tom Riddle a Ginny?', 
             options: [
                 {option: "Vincent Crabbe", isCorrect: false},
@@ -113,6 +122,7 @@ export const Questionshp = [
 
     {
         ids: 10,
+        name: 'Molly',
         question: '¿A qué reconocido mortifago/a asesinó en la Battalla de Hogwarts?', 
             options: [
                 {option: "Bellatrix Lestrange", isCorrect: true},
@@ -124,6 +134,7 @@ export const Questionshp = [
 
     {
         ids: 11,
+        name: 'Arthur',
         question: '¿Por qué objeto del mundo Muggle se intriga el Sr Weasley al conocer a Harry?', 
             options: [
                 {option: "Jabón Liquido", isCorrect: false},
@@ -138,6 +149,7 @@ export const Questionshp = [
 
     {
         ids: 12,
+        name: 'Neville',
         question: '¿Cuál de los siguientes Horrocrux es destruído por Neville?', 
             options: [
                 {option: "Guardapelo de Salazar Slytherin", isCorrect: false},
@@ -152,6 +164,7 @@ export const Questionshp = [
 
     {
         ids: 13,
+        name: 'Luna',
         question: '¿En cuál de las siguientes casas de Hogwarts pertenece Luna?', 
             options: [
                 {option: "Ravenclaw", isCorrect: true},
@@ -165,6 +178,7 @@ export const Questionshp = [
 
     {
         ids: 14,
+        name: 'Draco',
         question: '¿Cuál era la tarea fundamental que se le asignó a Draco en "El misterio del príncipe"?', 
             options: [
                 {option: "Sacrificar su vida para fortalecer a Voldemort", isCorrect: false},
@@ -178,6 +192,7 @@ export const Questionshp = [
 
     {
         ids: 15,
+        name: 'Dumbledore',
         question: '¿A raíz del uso de qué Horrocrux Albus comienza a estar destinado a morir?', 
         options: [
             {option: "La Diadema de Rowena Ravenclaw", isCorrect: false},
@@ -190,6 +205,7 @@ export const Questionshp = [
     },
     {
         ids: 16,
+        name: 'Minerva',
         question: '¿Qué objeto se encarga de regarle a Harry Potter en su primer año en Hogwarts?', 
         options: [
             {option: "Varita mágica de acebo", isCorrect: false},
@@ -202,6 +218,7 @@ export const Questionshp = [
     },
     {
         ids: 17,
+        name: 'Lupin',
         question: '¿Cuál era el Boggart (personificación del mayor miedo) de Remus?', 
         options: [
             {option: "Severus Snape", isCorrect: false},
@@ -214,6 +231,7 @@ export const Questionshp = [
     },
     {
         ids: 18,
+        name: 'Hagrid',
         question: '¿Cuál era el nombre del perro de Hagrid?', 
         options: [
             {option: "Fang", isCorrect: true},
@@ -226,6 +244,7 @@ export const Questionshp = [
     },
     {
         ids: 19,
+        name: 'Sirius',
         question: '¿Quién se encargó de asesinar al padrino de Harry Potter?', 
         options: [
             {option: "Lord Voldemort", isCorrect: false},
@@ -238,6 +257,7 @@ export const Questionshp = [
     },
     {
         ids: 20,
+        name: 'Snape',
         question: '¿Cuál es la asignatura que siempre apasionó a Severus enseñar?', 
         options: [
             {option: "Encantamientos", isCorrect: false},
@@ -250,6 +270,7 @@ export const Questionshp = [
     },
     {
         ids: 21,
+        name: 'Bella',
         question: '¿Qué reconocida frase utilizó Bellatrix luego de asesinar a Sirius Black?', 
         options: [
             {option: "Yo asesiné a Sirius Black, yo asesiné a Sirius Black", isCorrect: false},
@@ -262,6 +283,7 @@ export const Questionshp = [
     },
     {
         ids: 22,
+        name: 'Voldemort',
         question: '¿En cuántas partes diferentes divide su alma Voldemort (horrocruxes)?', 
         options: [
             {option: "6 partes", isCorrect: false},
@@ -274,6 +296,7 @@ export const Questionshp = [
     },
     {
         ids: 23,
+        name: 'Filch',
         question: '¿Cómo se llamaba la gata del personaje?', 
         options: [
             {option: "Fang", isCorrect: false},

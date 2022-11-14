@@ -31,19 +31,20 @@ const [finishQuestions,setFinishQuestions] = useState(true);
                 ?<h2>{item.apodo}</h2>
                 :<div className={styles.div0}>              
                   <div className={styles.div1}>
-                    <h2>{item.personaje}</h2>
+                    <h3 className={styles.h3new}>{item.personaje}</h3>
                     <Image alt={'Personajes de Harry Potter'} src={item.imagen} width={100} height={100} quality={100} className={styles.imgs} />  
                   </div>
 
-                  <div className={styles.div2}>
-                    {Questionshp.map((q)=>(
-                      <div key={q.ids}>
+                  <div>
+                    {Questionshp.map((q,index)=>(
+                      <div key={index}>
                           {
-                            item.id === q.ids
-                            ?<div className={styles.divQuestionsButtons}>
-                              <h3>{q.question}</h3>
-                              <h3>{q.options.map((op)=>(
-                                <button key={q.ids}>
+                            item.apodo === q.name
+                            ?<div  className={styles.div2}>
+                              <h3 className={styles.h2new}>{q.question}</h3>
+                              <h3 className={styles.h3new}>
+                                {q.options.map((op,index)=>(
+                                <button key={index} className={styles.ButtonOption}>
                                   {op.option}
                                 </button>
                               ))}</h3>

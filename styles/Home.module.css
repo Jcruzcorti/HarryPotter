@@ -147,7 +147,11 @@
   box-shadow: 4px 4px 20px #262626;
   width: 190px;
   height: auto;
+
 }
+
+
+
 
 /* @media  screen and (max-width:768px) {
   .imgs{
@@ -233,6 +237,13 @@
   filter: drop-shadow(0.5px 0.5px 1px #262626);
 
 }
+
+.h2new{
+  font-family: 'Crimson Text', serif; 
+  font-size: 30px;
+  color: #141414;
+  filter: drop-shadow(1px 1px 0.5px #262626);
+}
 .h3{
   font-family: 'Crimson Text', serif;
   font-size: 25px;
@@ -242,6 +253,12 @@
   font-family: 'Crimson Text', serif;
   font-weight: bold;
   filter: drop-shadow(3px 3px 12px #262626)
+}
+
+.h3new{
+  font-family: 'Crimson Text', serif;
+  font-size: 32px;
+  
 }
 
 
@@ -256,16 +273,48 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  border: 2px outset #141414;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px 1px #141414;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 20px;
 }
 
 .div1{
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .div2{
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
+
+.ButtonOption{
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  font-family: 'Crimson Text', serif;
+  background-color:rgb(222, 177, 14);
+  color: #141414;
+  border: 1px solid #141414;
+  border-radius: 3px;
+  box-shadow: 0.5px 0.5px 2.5px 0px #141414;
+  text-align: center;
+}
+
+.ButtonOption:hover{
+  background-color:rgb(229, 183, 16);
+  box-shadow: 2px 2px 6px 0.5px #141414;
+}
 
 .pFooter{
   font-family: 'Crimson Text', serif;
