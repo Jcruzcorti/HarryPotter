@@ -251,6 +251,22 @@
   font-weight: 600;
 }
 
+.div0{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div1{
+
+}
+
+.div2{
+
+}
+
+
 .pFooter{
   font-family: 'Crimson Text', serif;
   font-size: 22px;
