@@ -1,14 +1,15 @@
 import React,{useState,useContext} from 'react'
-import { Context } from '../components/context/Context';
 import PageLayOut from '../components/layout/PageLayOut';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image'
 import Link from 'next/link';
 import QuestionsList from '../components/questionslist/QuestionsList';
+// import { Questionshp } from '../components/mock/Questionshp';
 
 function questions({data}) {
 
   const [themestate, setThemestate] = useState(true)
+  
 
   // const {a} = useContext(Context)
 
@@ -24,6 +25,10 @@ function questions({data}) {
   }
 
 
+
+
+
+
   return (
   
     <PageLayOut title='Harry Potter Quiz'>
@@ -31,16 +36,18 @@ function questions({data}) {
         <div className={styles.divButton}>
           <button onClick={(e)=>changeTheme(e)} 
             className={themestate ? styles.buttonTheme :styles.buttonTheme2}>
-               <Image src="/mode.png"alt="Light and dark mode" width={40} height={30} className={styles.lightDarkMode}/>
+               <Image src="/mode.png"alt="Light and dark mode" width={30} height={20} className={styles.lightDarkMode}/>
           </button>
         </div>
         <main className={styles.main2}>
           <h1 className={styles.h1}>HARRY POTTER</h1>
-          <Link href={'/'}>VOLVER AL INICIO</Link>
+          {/* <Link href={'/'}>VOLVER AL INICIO</Link> */}
+          {/* <p className={styles.pQuestions}>TIEMPO:</p> */}
           <div>
-            <p className={styles.pQuestions}>PREGUNTAS</p>
+            {/* <p className={styles.pQuestions}>PREGUNTAS</p> */}
             <div>
               <QuestionsList data={data}/>
+              {/* <Questionshp data={data}/> */}
             </div>        
           </div>
         </main>
@@ -71,7 +78,7 @@ export async function getStaticProps(){
 
     return{
       props:{
-          data
+        data
       }
   }
 }

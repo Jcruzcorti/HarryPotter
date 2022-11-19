@@ -14,7 +14,12 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="">
-        <Head>{CssBaseline.flush()}</Head>
+        <Head>
+          <link rel="icon" href="/logoreliquias.png" />
+          <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+          <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Changa+One:ital@0;1&family=Crimson+Text:wght@700&family=Noto+Serif+Telugu:wght@700&display=swap" rel="stylesheet"/>
+            {CssBaseline.flush()}</Head>
         <body>
           <Main />
           <NextScript />
