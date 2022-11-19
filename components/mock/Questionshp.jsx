@@ -1,39 +1,3 @@
-
-// import React from 'react'
-
-// function newdata({data}) {
-
-//     const newData = {
-//         ...data,
-//         ...Questionshp
-//     }
-
-//   return (
-//     <div>
-//         {   
-//             newData.map((item)=>(
-//                 <div key={item.id}>
-//                     {
-//                         item.id
-//                         ?<div className={styles.div1}>
-//                         <h3 className={styles.h3new}>{item.personaje}</h3>
-//                         <Image alt={'Personajes de Harry Potter'} src={item.imagen} width={100} height={100} quality={100} className={styles.imgs} />  
-//                         </div>
-//                         :null
-//                     }
-//                 </div>
-//             ))
-
-//         }
-//     </div>
-//   )
-// }
-
-// export default newdata;
-
-
-
-
 export const Questionshp = [
 
     {
@@ -83,7 +47,7 @@ export const Questionshp = [
     {
         ids: 4,
         name: 'Fred',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/fred_weasley.png',
         question: '¿Este es el personaje asesinado en la Batalla de Hogwarts?', 
             options: [
                 {option: "Si, es él", isCorrect: true},
@@ -95,7 +59,7 @@ export const Questionshp = [
 
     {
         ids: 5,
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/george_weasley.png',
         name: 'George',
         question: '¿O quizás es éste el personaje asesinado?', 
             options: [
@@ -109,7 +73,7 @@ export const Questionshp = [
     {
         ids: 6,
         name: 'Bill',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/bill_weasley.png',
         question: '¿Cuál es el nombre de la esposa de Bill?', 
             options: [
                 {option: "Fleur Delacour", isCorrect: true},
@@ -123,7 +87,7 @@ export const Questionshp = [
     {
         ids: 7,
         name: 'Percy',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/percy_weasley.png',
         question: '¿En qué pelicula realiza su primer aparición Pearcy como prefecto?', 
             options: [
                 {option: "La cámara secreta", isCorrect: false},
@@ -138,7 +102,7 @@ export const Questionshp = [
     {
         ids: 8,
         name: 'Charlie',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/charlie_weasley.png',
         question: '¿En qué película ayudó a proveer dragones para el Torneo de los Tres Magos?', 
             options: [
                 {option: "La orden del Fénix", isCorrect: false},
@@ -153,7 +117,7 @@ export const Questionshp = [
     {
         ids: 9,
         name: 'Ginny',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/ginny_weasley.png',
         question: '¿Qué personaje se encarga de plantarle el diario de Tom Riddle a Ginny?', 
             options: [
                 {option: "Vincent Crabbe", isCorrect: false},
@@ -168,7 +132,7 @@ export const Questionshp = [
     {
         ids: 10,
         name: 'Molly',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/molly_weasley.png',
         question: '¿A qué reconocido mortifago/a asesinó en la Battalla de Hogwarts?', 
             options: [
                 {option: "Bellatrix Lestrange", isCorrect: true},
@@ -181,7 +145,7 @@ export const Questionshp = [
     {
         ids: 11,
         name: 'Arthur',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/arthur_weasley.png',
         question: '¿Por qué objeto del mundo Muggle se intriga el Sr Weasley al conocer a Harry?', 
             options: [
                 {option: "Jabón Liquido", isCorrect: false},
@@ -197,7 +161,7 @@ export const Questionshp = [
     {
         ids: 12,
         name: 'Neville',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/neville_longbottom.png',
         question: '¿Cuál de los siguientes Horrocrux es destruído por Neville?', 
             options: [
                 {option: "Guardapelo de Salazar Slytherin", isCorrect: false},
@@ -213,7 +177,7 @@ export const Questionshp = [
     {
         ids: 13,
         name: 'Luna',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/luna_lovegood.png',
         question: '¿En cuál de las siguientes casas de Hogwarts pertenece Luna?', 
             options: [
                 {option: "Ravenclaw", isCorrect: true},
@@ -228,7 +192,7 @@ export const Questionshp = [
     {
         ids: 14,
         name: 'Draco',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/draco_malfoy.png',
         question: '¿Cuál era la tarea fundamental que se le asignó a Draco en "El misterio del príncipe"?', 
             options: [
                 {option: "Sacrificar su vida por Voldemort", isCorrect: false},
@@ -243,7 +207,7 @@ export const Questionshp = [
     {
         ids: 15,
         name: 'Dumbledore',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/albus_dumbledore.png',
         question: '¿A raíz del uso de qué Horrocrux Albus comienza a estar destinado a morir?', 
         options: [
             {option: "La Diadema de Rowena Ravenclaw", isCorrect: false},
@@ -257,7 +221,7 @@ export const Questionshp = [
     {
         ids: 16,
         name: 'Minerva',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/minerva_mcgonnagall.png',
         question: '¿Qué objeto se encarga de regarle a Harry Potter en su primer año en Hogwarts?', 
         options: [
             {option: "Varita mágica de acebo", isCorrect: false},
@@ -271,7 +235,7 @@ export const Questionshp = [
     {
         ids: 17,
         name: 'Lupin',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/remus_lupin.png',
         question: '¿Cuál era el Boggart (personificación del mayor miedo) de Remus?', 
         options: [
             {option: "Severus Snape", isCorrect: false},
@@ -285,7 +249,7 @@ export const Questionshp = [
     {
         ids: 18,
         name: 'Hagrid',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/rubeus_hagrid.png',
         question: '¿Cuál era el nombre del perro de Hagrid?', 
         options: [
             {option: "Fang", isCorrect: true},
@@ -299,7 +263,7 @@ export const Questionshp = [
     {
         ids: 19,
         name: 'Sirius',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/sirius_black.png',
         question: '¿Quién se encargó de asesinar al padrino de Harry Potter?', 
         options: [
             {option: "Lord Voldemort", isCorrect: false},
@@ -313,7 +277,7 @@ export const Questionshp = [
     {
         ids: 20,
         name: 'Snape',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/severus_snape.png',
         question: '¿Cuál es la asignatura que siempre apasionó a Severus enseñar?', 
         options: [
             {option: "Encantamientos", isCorrect: false},
@@ -327,7 +291,7 @@ export const Questionshp = [
     {
         ids: 21,
         name: 'Bella',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/bellatrix_lestrange.png',
         question: '¿Qué reconocida frase repitió Bellatrix luego de asesinar a Sirius Black?', 
         options: [
             {option: "Yo asesiné a Sirius Black", isCorrect: false},
@@ -341,7 +305,7 @@ export const Questionshp = [
     {
         ids: 22,
         name: 'Voldemort',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/lord_voldemort.png',
         question: '¿En cuántas partes diferentes divide su alma Voldemort (horrocruxes)?', 
         options: [
             {option: "6 partes", isCorrect: false},
@@ -355,7 +319,7 @@ export const Questionshp = [
     {
         ids: 23,
         name: 'Filch',
-        img: '',
+        img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/argus_filch.png',
         question: '¿Cómo se llamaba la gata del personaje?', 
         options: [
             {option: "Fang", isCorrect: false},
