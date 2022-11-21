@@ -278,7 +278,7 @@ export const Questionshp = [
         ids: 20,
         name: 'Snape',
         img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/severus_snape.png',
-        question: '¿Cuál es la asignatura que siempre apasionó a Severus enseñar?', 
+        question: '¿Cuál es la asignatura que siempre apasionó a Snape enseñar?', 
         options: [
             {option: "Encantamientos", isCorrect: false},
             {option: "Defensa contra las artes oscuras", isCorrect: true},
@@ -320,7 +320,7 @@ export const Questionshp = [
         ids: 23,
         name: 'Filch',
         img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/argus_filch.png',
-        question: '¿Cómo se llamaba la gata del personaje?', 
+        question: '¿Cómo se llamaba la gata de Flich, vigilante y celador de Hogwarts?', 
         options: [
             {option: "Fang", isCorrect: false},
             {option: "Fluffy", isCorrect: false},

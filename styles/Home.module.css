@@ -134,7 +134,7 @@
   color: #080808 ;
   /* font-family: 'Cardo', serif; */
   /* font-size: 20px;   */
-  
+  cursor: pointer;
 }
 
 .buttonTheme2{
@@ -150,6 +150,7 @@
   color: #080808 ;
   /* font-family: 'Cardo', serif; */
   /* font-size: 20px; */
+  cursor: pointer;
 }
 
 .lightDarkMode{
