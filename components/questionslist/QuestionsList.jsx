@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React, {useState,useEffect} from 'react'
 import styles from '../../styles/Home.module.css';
+import CartModal from '../cartmodal/CartModal';
 import { Questionshp } from '../mock/Questionshp';
 
 
@@ -57,7 +58,7 @@ return(
     <div className='DivPrimary'>
       <div>
         {/* <h1 className="H1Tittle"> {props.greet}</h1>    */}
-        <CartModal  score={score}/> 
+        <CartModal score={score}/> 
       </div>
     </div>
 )
