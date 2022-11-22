@@ -61,7 +61,7 @@ export default function CartModal({score}) {
       }
 
       else {
-        playerScore(dataAnswer).then((CreateNewAnswer)=>{
+        playerScore(dataAnswer).then(()=>{
 
           if (score2) {
             Swal.fire({
