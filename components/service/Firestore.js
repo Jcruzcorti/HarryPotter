@@ -7,7 +7,7 @@ import {getFirestore, addDoc, collection, Timestamp} from "firebase/firestore"
 const firebaseConfig = {
   apiKey: "AIzaSyDXuHXPXiZjiKeqLb8SghyDq2DYNiowBYw",
   authDomain: "hpquiz-2254c.firebaseapp.com",
-  projectId: "hpquiz-2254c",
+  projectId: process.env.REACT_APP_PROYECT_FB_ID,
   storageBucket: "hpquiz-2254c.appspot.com",
   messagingSenderId: "447438591430",
   appId: "1:447438591430:web:be7737c5d72868754acec7"
