@@ -17,7 +17,7 @@ const firebaseConfig = {
 const appFirebase = initializeApp(firebaseConfig);
 const appFirestore = getFirestore(appFirebase);
 
-  export async function playerScore(dataAnswer){
+  export default async function playerScore(dataAnswer){
 
     const quizCollection = collection(appFirestore, "PlayerScoreData");
     const dataTimeStamp = Timestamp.now()
@@ -31,4 +31,4 @@ const appFirestore = getFirestore(appFirebase);
 
   }
 
-  export default appFirestore;
+  // export default appFirestore;

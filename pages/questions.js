@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css';
 import Image from 'next/image'
 import QuestionsList from '../components/questionslist/QuestionsList';
 
-function questions({data}) {
+function Questions({data}) {
 
   const [themestate, setThemestate] = useState(true)
   
@@ -56,5 +56,5 @@ function questions({data}) {
   )
 }
 
-export default questions;
+export default Questions;
 

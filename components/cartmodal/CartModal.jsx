@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Swal from 'sweetalert2'
 import  styles from '../../styles/Home.module.css'
-import {playerScore} from '../../pages/service/Firestore'
+import playerScore from '../service/Firestore'
 
 
 
