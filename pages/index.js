@@ -45,9 +45,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <p className={styles.pFooter}>@juancortinas</p>{' '}
-            {/* <span className={styles.logo}> */}
               <Image src="/logohp.png" alt="HP Logo" width={70} height={50} />
-            {/* </span> */}
           </a>
         </footer>     
       </div>
