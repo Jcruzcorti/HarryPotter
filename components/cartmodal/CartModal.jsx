@@ -1,59 +1,128 @@
-import React from "react";
-import { Modal, Input, Button, Text } from "@nextui-org/react";
+import React, { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+import Swal from 'sweetalert2'
 import  styles from '../../styles/Home.module.css'
-// import { Mail } from "./Mail";
-// import { Password } from "./Password";
-
-export default function CartModal() {
+import {playerScore} from '../../pages/service/Firestore'
 
 
 
 
-  const [visible, setVisible] = React.useState(false);
-  const handler = () => setVisible(true);
-  const closeHandler = () => {
-    setVisible(false);
-    console.log("closed");
-  };
+
+
+export default function CartModal({score}) {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+
+
+  const [player,setPlayer] = useState({
+    name:""
+  })
+
+
+    function handleChange(e) {
+      const field =e.target.name;
+      const value = e.target.value;
+        setPlayer({
+          ...player,
+          [field]: value})
+    }
+
+
+  const score2 = JSON.stringify(score)
+
+
+    function handleFin(e) {
+      e.preventDefault();
+      const dataAnswer ={
+        player,
+        score: score
+      }
+
+      if (player.name === ""){
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 2000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+          }
+        })
+        
+        Toast.fire({
+          icon: 'error',
+          iconColor:'rgb(229, 183, 16)',
+          title: 'Complete la información por favor',
+        })
+      }
+
+      else {
+        playerScore(dataAnswer).then((CreateNewAnswer)=>{
+
+          if (score2) {
+            Swal.fire({
+              title: 'Obtuviste una puntuación de ' + score2 + ' respuestas correctas de 23 posibles',
+              color:'#141414',
+              background:'rgb(226, 226, 226)',
+              showConfirmButton:false,
+            })
+          }   
+          
+        
+          handleClose()
+          setTimeout(() => {
+            window.location.href="/";
+          }, 5000); 
+        });
+      }
+    }
+
+
+
   return (
-    <div>
-      <Button className={styles.ButtonOption2} auto color="NormalColor" size="lg" bordered="true" flat="true" shadow="true" ghost onClick={handler}>
-       <p className={styles.pQuestions}>Ver puntuación</p>
-      </Button>
+    <>
+      <button className={styles.ButtonOption2} onClick={handleShow}>
+        Ver puntuación
+      </button>
+
       <Modal
-        closeButton
-        blur
-        aria-labelledby="modal-title"
-        open={visible}
-        onClose={closeHandler}
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+        
       >
-        <Modal.Header>
-          <Text id="modal-title" b size={18}>
-            Para conocer su puntuación, ingrese su información
-          </Text>
+        <Modal.Header closeButton className={styles.ModalContainer}>    
+          <Modal.Title className={styles.pQuestions}>Para conocer su puntuación, ingrese su información</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <Input
-            clearable
-            bordered
-            fullWidth
-            color="primary"
-            size="lg"
-            placeholder="Nombre completo"
-            // contentLeft={<Mail fill="currentColor" />}
-          />
+        <Modal.Body className={styles.ModalContainer}>
+      
+          <div >
+          <form>
+            <div className="form-group">
+            <Modal.Title className={styles.ModalContainer}>
+               <input onChange={handleChange} type="text" name='name' className={styles.InputModal}  id="formGroupExampleInput" placeholder="Nombre completo" aria-required/>
+            </Modal.Title>
+   
+            </div>
+          </form>
+        </div>
+
         </Modal.Body>
-        <Modal.Footer>
-          <Button auto flat color="error" onClick={closeHandler}>
+        <Modal.Footer className={styles.ModalContainer}>
+          <button className={styles.ButtonOption3} onClick={handleClose}>
             Cerrar
-          </Button>
-          <Button auto onClick={closeHandler}>
-            Enviar
-          </Button>
+          </button>
+          <button className={styles.ButtonOption3} onClick={handleFin}>Enviar</button>
         </Modal.Footer>
       </Modal>
-    </div>
+    </>
   );
+
 }
-
-

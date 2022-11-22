@@ -200,12 +200,14 @@
 .h3{
   font-family: 'Crimson Text', serif;
   font-size: 25px;
-  
+  color: #141414;
+  filter: drop-shadow(0.5px 0.5px 1px #262626);  
 }
 .h3:hover{
   font-family: 'Crimson Text', serif;
   font-weight: bold;
-  filter: drop-shadow(3px 3px 12px #262626)
+  /* filter: drop-shadow(3px 3px 12px #262626); */
+  filter: drop-shadow(1px 1px 3px #262626); 
 }
 
 .h3new{
@@ -325,9 +327,37 @@
   
   box-shadow: 2px 2px 6px 0.5px #141414;
 }
+
+.ButtonOption3{
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: 'Crimson Text', serif;
+  background-color:rgb(226, 226, 226);
+  color: #141414;
+  border: 1px solid #141414;
+  border-radius: 8px;
+  box-shadow: 0.5px 0.5px 2.5px 0px #141414;
+  text-align:center;
+  
+}
+.ButtonOption3:hover{
+  background-color:rgb(231, 231, 230);
+  box-shadow: 2px 2px 6px 0.5px #141414;
+}
+.InputModal{
+  width: 100%;
+  font-family: 'Crimson Text', serif;
+}
+.ModalContainer{
+  background-color:rgb(238, 238, 238);
+
+}
 .pFooter{
   font-family: 'Crimson Text', serif;
   font-size: 22px;
+  color: #141414;
 }
 .pFooter:hover{
   font-family: 'Crimson Text', serif;
