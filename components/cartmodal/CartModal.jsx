@@ -65,7 +65,7 @@ export default function CartModal({score}) {
 
           if (score2) {
             Swal.fire({
-              title: 'Obtuviste una puntuación de ' + score2 + ' respuestas correctas de 23 posibles',
+              titleText: 'Obtuviste una puntuación de ' + score2 + ' respuestas correctas de 23 posibles',
               color:'#141414',
               background:'rgb(226, 226, 226)',
               showConfirmButton:false,
@@ -76,7 +76,7 @@ export default function CartModal({score}) {
           handleClose()
           setTimeout(() => {
             window.location.href="/";
-          }, 5000); 
+          }, 8000); 
         });
       }
     }
