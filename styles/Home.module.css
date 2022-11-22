@@ -461,9 +461,15 @@
   }
   .h3{
     font-family: 'Crimson Text', serif;
-    font-size: 18px;
+    font-size: 14px;
     color: #141414;
     filter: drop-shadow(0.5px 0.5px 1px #262626);  
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid #141414;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 0px #141414;
+    
   }
   .h3:hover{
     font-family: 'Crimson Text', serif;

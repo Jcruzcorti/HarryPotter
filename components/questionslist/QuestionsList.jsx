@@ -12,7 +12,7 @@ export default function QuestionsList() {
 const [actualQuestion, setActualQuestion]=useState(0)
 const [score, setScore]=useState(0)
 const [isFinished, setIsFinished ]=useState(false)
-const [timeLeft, setTimeLeft] =useState(180)
+const [timeLeft, setTimeLeft] =useState(240)
 const [finishedTime, setFinishedTime] =useState(false)
 
 
