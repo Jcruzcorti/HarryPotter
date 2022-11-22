@@ -103,7 +103,7 @@ export const Questionshp = [
         ids: 8,
         name: 'Charlie',
         img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/charlie_weasley.png',
-        question: '¿En qué película ayudó a proveer dragones para el Torneo de los Tres Magos?', 
+        question: '¿En qué película Charlie Weasley ayudó a proveer dragones para el Torneo de los Tres Magos?', 
             options: [
                 {option: "La orden del Fénix", isCorrect: false},
                 {option: "El prisionero de Azkabán", isCorrect: false},

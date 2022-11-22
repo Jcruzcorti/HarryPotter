@@ -9,12 +9,10 @@ import { Questionshp } from '../mock/Questionshp';
 export default function QuestionsList() {
 
 
-const [finishQuestions,setFinishQuestions] = useState(true);
-
 const [actualQuestion, setActualQuestion]=useState(0)
 const [score, setScore]=useState(0)
 const [isFinished, setIsFinished ]=useState(false)
-const [timeLeft, setTimeLeft] =useState(1020)
+const [timeLeft, setTimeLeft] =useState(18000)
 const [finishedTime, setFinishedTime] =useState(false)
 
 
@@ -22,15 +20,12 @@ function handleAnswerSubmit(isCorrect,e) {
     if (isCorrect){
         setScore(score + 1)
     }
-    // e.target.classList.add(isCorrect ? "correct" : "incorrect")
-    // setTimeout(()=>{
         if (actualQuestion === Questionshp.length - 1){
             setIsFinished(true)
         }
         else {
             setActualQuestion(actualQuestion + 1);
         }
-    // },500);
 }
 
 
@@ -57,7 +52,6 @@ if (isFinished)
 return(
     <div className='DivPrimary'>
       <div>
-        {/* <h1 className="H1Tittle"> {props.greet}</h1>    */}
         <CartModal score={score}/> 
       </div>
     </div>
@@ -70,9 +64,9 @@ return(
             <div className={styles.divTime}>
                 {
                   (!finishedTime)
-                  ?<p className={styles.pQuestions}>TIEMPO: {timeLeft} SEGUNDOS</p>
+                  ?<h3 className={styles.h3new}>TIEMPO: {timeLeft} SEGUNDOS</h3>
                   :<>
-                    <p>Se terminó el tiempo</p>
+                    <h3 className={styles.h3new}>Se terminó el tiempo</h3>
                     <CartModal  score={score}/>
                   </>
                 }
@@ -109,11 +103,8 @@ return(
                           </div>
                           )) 
                         }
-                      </div>
-                      
-                      
-                    </div>
-                  
+                      </div>       
+                    </div>                 
                   </div>
                 </>
                 :null

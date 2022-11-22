@@ -7,8 +7,6 @@ import {playerScore} from '../../pages/service/Firestore'
 
 
 
-
-
 export default function CartModal({score}) {
 
   const [show, setShow] = useState(false);
