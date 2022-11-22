@@ -222,7 +222,7 @@ export const Questionshp = [
         ids: 16,
         name: 'Minerva',
         img: 'https://raw.githubusercontent.com/fedeperin/harry-potter-api/main/imagenes/minerva_mcgonnagall.png',
-        question: '¿Qué objeto se encarga de regarle a Harry Potter en su primer año en Hogwarts?', 
+        question: '¿Qué objeto se encarga de regalarle a Harry Potter en su primer año en Hogwarts?', 
         options: [
             {option: "Varita mágica de acebo", isCorrect: false},
             {option: "Escoba Saeta de Fuego", isCorrect: false},
