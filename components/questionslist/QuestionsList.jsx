@@ -80,7 +80,7 @@ return(
                       <h3 className={styles.h2new}>{Questionshp[actualQuestion].question}</h3> 
                     <div className={styles.div1}>
                       <div className={styles.divImg}>
-                      <Image alt={'Personajes de Harry Potter'} src={Questionshp[actualQuestion].img} width={100} height={100} quality={100} className={styles.imgs} priority />                               
+                      <Image alt={'Personajes de Harry Potter'} src={Questionshp[actualQuestion].img} width={100} height={100} quality={100} className={styles.imgs} priority={true} />                               
                       </div>
                       <div className={styles.divQuestions}>
                         {Questionshp[actualQuestion].options.map((q,index)=>(
