@@ -35,7 +35,7 @@ export default function Home() {
         <main className={styles.main} >
           <h1 className={styles.h1}>HARRY POTTER</h1>
           <h2 className={styles.h2}>23 PERSONAJES - 23 PREGUNTAS. ¿ESTÁS LISTO?</h2>
-          <Link href={'/Questions'}><h3 className={styles.h3}>COMENZAR QUIZ</h3></Link>   
+          <Link href={'/questions'}><h3 className={styles.h3}>COMENZAR QUIZ</h3></Link>   
         </main>
 
         <footer className={styles.footer}>
